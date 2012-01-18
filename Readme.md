@@ -1,6 +1,6 @@
 #Introduction
 
-Le code de ce petit bundle est celui lié à l'article sur la génération dynamique de formulaires sur le blog [KeiruaProd](http://www.keiruaprod.fr)
+Le code de ce petit bundle est celui lié à l'article sur la génération dynamique de formulaires sur le blog [KeiruaProd](http://www.keiruaprod.fr/blog)
 
 # Telechargement
 
@@ -39,4 +39,4 @@ Pour pas mal alléger ce dépot, je n'ai pas mis tout le reste du code de l'appl
 
 # Utilisez
 
-C'est bon, plus qu'à se rendre sur /customer et on peut regarder accéder aux pages du bundle.
+C'est bon, plus qu'à se rendre sur /customer et on peut accéder aux pages du bundle. 
