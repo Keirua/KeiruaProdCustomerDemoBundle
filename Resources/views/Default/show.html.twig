@@ -1,0 +1,1 @@
+{% extends '::base.html.twig' %}{% block body %}Affichage d'un customer<br />{{ customer.name}} <br />{% for prod in customer.products %}	- {{ prod.name }} <br />{% endfor %}<a href="{{ path('KeiruaProdApplicationBundle_add') }}">Ajouter un client</a> <br /><a href="{{ path('KeiruaProdApplicationBundle_homepage') }}">Index</a>{% endblock %}

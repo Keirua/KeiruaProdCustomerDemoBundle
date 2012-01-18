@@ -1,0 +1,7 @@
+parameters:
+#    keirua_prod_application.example.class: KeiruaProd\ApplicationBundle\Example
+
+services:
+#    keirua_prod_application.example:
+#        class: %keirua_prod_application.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,39 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<h1>Creation d'une commande</h1>
+Par defaut, un client commande au moins un produit. Par la suite, il est possible de rajouter des produits en cliquant sur le lien adéquat. On valide la commande via le bouton valider. Les données sont persistées dans la base de données, et sont visibles sur la page d'accueil.
+
+
+<form action="{{ path('KeiruaProdApplicationBundle_add') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+	{{ form_errors(form) }}
+	{{ form_rest(form) }}
+    <p>
+        <button type="submit">Creer la commande</button>
+    </p>
+</form>
+
+<ul class="record_actions">
+    <li>
+        <a href="#" class="product_add">
+            Ajouter un produit
+        </a>
+    </li>
+	<li>
+        <a href="{{ path('KeiruaProdApplicationBundle_homepage') }}">
+            Retour à la liste
+        </a>
+    </li>
+</ul>
+<script>
+    $('a.product_add').live('click', function(event){
+        event.preventDefault();
+		
+        var collectionHolder = $('#keiruaprod_applicationbundle_customertype_products');
+        var prototype = collectionHolder.attr('data-prototype');
+        form = prototype.replace(/\$\$name\$\$/g, collectionHolder.children().length);
+        collectionHolder.append(form);
+    });
+</script>
+{% endblock %}

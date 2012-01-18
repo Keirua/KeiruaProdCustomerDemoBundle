@@ -1,0 +1,9 @@
+KeiruaProdApplicationBundle_homepage:
+    pattern:  /
+    defaults: { _controller: KeiruaProdApplicationBundle:Default:index }
+KeiruaProdApplicationBundle_add:
+    pattern:  /add
+    defaults: { _controller: KeiruaProdApplicationBundle:Default:add }
+KeiruaProdApplicationBundle_show:
+    pattern:  /show/{id}
+    defaults: { _controller: KeiruaProdApplicationBundle:Default:show }
